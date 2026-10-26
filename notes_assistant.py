@@ -1,24 +1,3 @@
-"""
-PDF Notes Assistant
--------------------
-Upload lecture PDFs, pick a page range (a "chapter"), then:
-  - get a summary
-  - generate a quiz
-  - generate flashcards and export them to Anki
-  - ask questions about the selected pages
-  - keyword-search across all uploaded PDFs
-
-Uses the free Google Gemini API (get a key at https://aistudio.google.com).
-Scanned PDFs are read with OCR if Tesseract is installed (optional).
-
-Setup:
-    pip install streamlit pymupdf pypdf google-genai pytesseract pillow
-
-Run:
-    export GEMINI_API_KEY="your-key"     (Windows: set GEMINI_API_KEY=your-key)
-    streamlit run notes_assistant.py
-"""
-
 import json
 import os
 import re
